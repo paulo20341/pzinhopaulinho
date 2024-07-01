@@ -454,10 +454,32 @@ nome2 = int(input)("Digite seu nome")
 idade2 = int(input)("Digite sua idade")
 
 if idade1 > idade2:
-   print("O",nome1,"é idoso" )
+   print("O",nome1,"é idoso")
 
 elif idade2 > idade1:
   print("O",nome2,"é idoso" )
 
 else:
    print("Ninguem é idoso")
+
+"-----Atividade exemplo------"
+
+numero = int(input)("Entre com um numero")
+if numero >= 5 and numero <= 8:
+   print("O numero está entre 5 e 8")
+
+numero = int(input)("Entre com um numero")
+if numero >= 5 or numero <= 8:
+   print("O numero está entre 5 e 8")
+
+
+"-----Atividade 33------"
+
+idade1 = int(input)("Digite sua idade")
+
+if idade1 < 5 and idade1 >100:
+   print("Voce nao é humano, idade não plausivel")
+
+elif idade1 >5 and idade1<=100:
+   print("voce é humano, idade plausivel")
+
