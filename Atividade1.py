@@ -443,3 +443,21 @@ if um > dois:
 
 elif dois > um:
     print("O segundo numero é maior que o primeiro")
+
+
+"-----Atividade 31------"
+
+nome1 = int(input)("Digite seu nome")
+idade1 = int(input)("Digite sua idade")
+
+nome2 = int(input)("Digite seu nome")
+idade2 = int(input)("Digite sua idade")
+
+if idade1 > idade2:
+   print("O",nome1,"é idoso" )
+
+elif idade2 > idade1:
+  print("O",nome2,"é idoso" )
+
+else:
+   print("Ninguem é idoso")
