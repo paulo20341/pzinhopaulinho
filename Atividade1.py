@@ -483,3 +483,41 @@ if idade1 < 5 and idade1 >100:
 elif idade1 >5 and idade1<=100:
    print("voce é humano, idade plausivel")
 
+"-----Atividade 34------"
+
+nome11 = input("Digite seu nome")
+
+if nome11 == "Zezinho" and "Huginho" and "Luisinho":
+   print("Voce é sobrinho do pato donault")
+
+elif nome11 == "Chuquinho" and "Francisquinho":
+   print("Sobrinhos do Mikey Mouse")
+
+"-----Atividade 35------"
+
+nome12 = input("Digite seus pontos")
+
+if nome12 <0:
+   print("Impossivel")
+
+elif nome12 >= 0 and nome12 <=49:
+   print("Falhar miseravelmente")
+
+
+elif nome12 >=50 and nome12<=59:
+   print("1")
+
+elif nome12 >=60 and nome12<=69:
+   print("2")
+
+elif nome12 >=70 and nome12<=79:
+   print("3")
+
+elif nome12 >=80 and nome12<=89:
+   print("4")
+
+elif nome12 >=90 and nome12<=100:
+   print("5")
+   
+elif nome12 >100:
+   print("Impossivel")

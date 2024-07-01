@@ -1,9 +1,6 @@
-"-----Atividade 22------"
+"-----Atividade 34------"
 
-op = (input)("Digite seu salario por hora")
-op2 = (input)("Digite suas horas trabalhadas exceto comingo")
-op3 = (input)("e o dia da semana")
+nome11 = input("Digite seu nome")
 
-media = (op * op2)
-
-print("o salario diario é",media)
+if nome11 == "Zezinho" and "Huginho" and "Luisinho":
+   print("Voce é sobrinho do pato donault")
