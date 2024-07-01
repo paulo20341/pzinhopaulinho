@@ -313,8 +313,110 @@ op = int(input)("Digite seu salario por hora")
 op2 = int(input)("Digite suas horas trabalhadas exceto comingo")
 op3 = int(input)("e o dia da semana")
 
-media = (op * op2)
+media = op * op2
 
 print("o salario diario é",media)
 
+"-----Atividade 23------"
 
+pontos = int(input)("Digite a quantidade de pontos no cartão fidelidade")
+
+if pontos == 100:
+    print("10% de desconto")
+
+else:
+    print("15% De desconto")
+
+
+"-----Atividade 24------"
+
+atividade24 = int(input)("Digite a previsão do tempo para amanhã")
+atividade24 = int(input)("vai chover (sim ou não?)")
+
+if atividade24 >= 20:
+    print("Use jeans e camiseta")
+
+    if atividade24  <=10:
+       print("Use uma jeans e uma camiseta com um casaco se possivel")
+
+
+
+"-----Atividade 25,26------"
+
+pergunta = input("Notas")
+pergunta2 = input("Notas")
+media = (pergunta + pergunta2) / 2
+
+if media >= 7:
+    print("Aprovado")
+
+    if media <7:
+        print("Reprovado")
+
+
+"-----Atividade 27------"
+
+
+atividade27 = int(input)("Digite o preço do produto")
+
+if atividade27 <=50:
+    print("Categoria economica")
+
+    if atividade27 >50  >=100:
+       print("Categoria Intermediaria")
+
+    else:
+        print("Premium")
+
+
+"-----Atividade 28------"
+
+idade1 = int(input)("Qual sua idade?")
+
+if idade1 >=16:
+    print("Pode votar")
+
+else:
+    print("Não pode votar")
+
+"-----Atividade 29------"
+
+mes1 = int(input)("Digite um mes")
+
+if mes1 == 1:
+    print("janeiro")
+
+    if mes1 == 2:
+      print("Fevereiro")
+
+    if mes1 == 3:
+      print("março")
+
+    if mes1 == 4:
+      print("abril")
+
+    if mes1 == 5:
+      print("maio")
+
+    if mes1 == 6:
+      print("junho")
+
+    if mes1 == 7:
+      print("julho")
+
+    if mes1 == 8:
+      print("agosto")
+
+    if mes1 == 9:
+      print("setembro")
+
+    if mes1 == 10:
+      print("outubro")
+
+    if mes1 == 11:
+      print("novembro")
+
+    if mes1 == 12:
+      print("dezembro")
+
+"-----Atividade 30------"
