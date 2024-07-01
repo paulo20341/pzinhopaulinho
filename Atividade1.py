@@ -419,4 +419,27 @@ if mes1 == 1:
     if mes1 == 12:
       print("dezembro")
 
+"-----Rescrevendo slide------"
+
+gol_casa = int(input("Pontuação de casa:"))
+gol_fora = int(input("Pontuação de fora"))
+
+if gol_casa > gol_fora:
+   print("O time de casa venceu")
+
+elif gol_fora > gol_casa:
+   print("O time de fora é campeao")
+
+else:
+   print("Empate")
+
 "-----Atividade 30------"
+
+um = int(input("Digite um numero inteiro"))
+dois = int(input("Digite mais um "))
+
+if um > dois:
+   print("O primeiro numero é maior que o segundo")
+
+elif dois > um:
+    print("O segundo numero é maior que o primeiro")
