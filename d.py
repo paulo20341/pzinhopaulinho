@@ -1,6 +1,13 @@
-"-----Atividade 34------"
+from math import sqrt
 
-nome11 = input("Digite seu nome")
+while True:
+   numero = int(input("Entre com um número inteiro: "))
 
-if nome11 == "Zezinho" and "Huginho" and "Luisinho":
-   print("Voce é sobrinho do pato donault")
+   if numero < 0:
+      print("Número inválido")
+      break
+   elif numero > 0:
+      raiz_quadrada = sqrt(numero)
+      print(f"A raiz quadrada de {numero} é {raiz_quadrada}")
+      break
+3

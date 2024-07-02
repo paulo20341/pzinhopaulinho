@@ -1,3 +1,6 @@
+from math import sqrt
+
+print(sqrt)(9)
 "Atividade 6"
 numero = numero = float(input("Digite um número: "))
 
@@ -521,3 +524,85 @@ elif nome12 >=90 and nome12<=100:
    
 elif nome12 >100:
    print("Impossivel")
+
+"-----Atividade 36------"
+
+numberone = input("Digite numero inteiro tropa")
+
+if numberone /3:
+   print("Divisivel por 3")
+
+else:
+   print("Não é divisivel por 3, rebola pos crias papai kkkkkkkk")
+
+"-----Atividade Especial 37------"
+
+def eh_ano_bissexto(ano):
+    if ano % 4 == 0:
+        if ano % 100 == 0:
+            if ano % 400 == 0:
+                print("verdadeiro")
+            else:
+                print("falso")
+        else:
+            print("verdadeiro")
+    else:
+        print("falso")
+
+ano = int(input("Digite um ano: "))
+
+if eh_ano_bissexto(ano):
+    print(f"{ano} é um ano bissexto.")
+else:
+    print(f"{ano} não é um ano bissexto.")
+
+
+"-----Rescrevendo a estrutura de repetição------"
+
+while True:
+   numero = int(input)("Entre com um numero: ou digite -1 para parar:")
+
+   if numero == -1:
+      break
+   
+   print(numero ** 2)
+
+   print("Programa encerrado, Obrigado(a)")
+
+"-----Rescrevendo a estrutura de repetição 2------"
+
+while True:
+   codigo = input("Por favor, insira o PIN:")
+   if codigo == "1234":
+      break
+   print("Errado!... tente de novo")
+
+print("PIN correto! Obrigado.")
+
+"-----Atividade 38------"
+
+while True:
+    codigo = input("Por favor, insira o PIN:")
+    if codigo == "1234":
+      break
+    print("Errado!..., Voce quer continuar? (s/n) ")
+    codigo2 = input("Por favor, insira a opção desejada:(sim/não)")
+    if codigo2 == "Não":
+       break
+
+print("PIN correto! Obrigado.")
+
+
+"-----Atividade 39------"
+
+while True:
+   numero = int(input("Entre com um número inteiro: "))
+
+   if numero < 0:
+      print("Número inválido")
+      break
+   elif numero > 0:
+      raiz_quadrada = sqrt(numero)
+      print(f"A raiz quadrada de {numero} é {raiz_quadrada}")
+      break
+
