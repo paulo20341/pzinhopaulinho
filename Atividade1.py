@@ -629,3 +629,39 @@ while True:
         break
     else:
         print("Senha incorreta")
+
+
+"-----Rescrita------"
+
+tentativas = 0
+while True:
+   codigo = input("Por favor, digite seu PIN:")
+   tentativas = 1
+   if codigo == "1234":
+     sucesso = True
+     break
+
+   if tentativas == 3:
+    sucesso = False
+    break
+   
+   print("Incorreto...tente novamente")
+if sucesso:
+   print("PIN correto inserido!")
+
+else:
+   print("Muitas tentativas...")
+
+"-----Atividade 42------"
+
+tentativas = 0
+while True:
+    numero = input("Entre com uma senha: ")
+    senha = "4321"
+    
+    if numero == senha:
+        tentativas = + 1
+        print("Senha Correta")
+        print("tentativas restantes",tentativas)
+        break
+    

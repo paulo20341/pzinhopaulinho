@@ -1,11 +1,11 @@
+tentativas = 0
 while True:
     numero = input("Entre com uma senha: ")
-    senha = "1234"
+    senha = "4321"
     
     if numero == senha:
+        tentativas = + 1
         print("Senha Correta")
+        print("tentativas restantes",tentativas)
         break
-    else:
-        print("Senha incorreta")22
-        break
-        print("Senha incorreta")
+    
