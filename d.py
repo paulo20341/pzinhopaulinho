@@ -1,13 +1,11 @@
-from math import sqrt
-
 while True:
-   numero = int(input("Entre com um número inteiro: "))
-
-   if numero < 0:
-      print("Número inválido")
-      break
-   elif numero > 0:
-      raiz_quadrada = sqrt(numero)
-      print(f"A raiz quadrada de {numero} é {raiz_quadrada}")
-      break
-3
+    numero = input("Entre com uma senha: ")
+    senha = "1234"
+    
+    if numero == senha:
+        print("Senha Correta")
+        break
+    else:
+        print("Senha incorreta")22
+        break
+        print("Senha incorreta")

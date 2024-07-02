@@ -606,3 +606,26 @@ while True:
       print(f"A raiz quadrada de {numero} é {raiz_quadrada}")
       break
 
+"-----Atividade 40------"
+while True:
+   numero = 5
+   print("Contando")
+
+   print(numero)
+   numero = numero -1
+   if numero > 0:
+      break
+   
+print("fall")
+
+"-----Atividade 41------"
+
+while True:
+    numero = input("Entre com uma senha: ")
+    senha = "1234"
+    
+    if numero == senha:
+        print("Senha Correta")
+        break
+    else:
+        print("Senha incorreta")
