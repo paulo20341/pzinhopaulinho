@@ -665,3 +665,31 @@ while True:
         print("tentativas restantes",tentativas)
         break
     
+"-----Atividade 43------"
+
+
+ano = int(input("Digite um ano: "))
+
+while True:
+    ano += 1
+    if (ano % 4 == 0 and ano % 100 != 0) or (ano % 400 == 0):
+        print(f"O próximo ano bissexto após {ano - 1} é {ano}.")
+        break
+
+"-----Rescrita------"
+
+numero = int(input("Por favor,Digite um numero"))
+
+while numero < 10:
+   print(numero)
+   numero += 1
+
+print("Execução Finalizada")
+
+"-----Atividade 44------"
+
+numero = 2
+while numero <= 30:
+    print(numero)
+    numero += 2
+
