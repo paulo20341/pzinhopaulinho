@@ -779,3 +779,22 @@ while condicao:
         print("A senha não atende aos requisitos. Tente novamente.")
 
 print("Senha aceita:", senha)
+
+"-----Atividade 52------"
+import random
+
+while condicao:
+    print("Bem vindo ao jogo de advinhação")
+    Advinha = int(input("Digite um Numero entre 1 a 100: "))
+    
+    numero_secreto = 6
+    
+    if Advinha == numero_secreto:
+        print("Parabéns, você acertou!")
+        break
+    elif Advinha < numero_secreto:
+        print("Tente um número maior.")
+    else:
+        print("Tente um número menor.")
+
+
