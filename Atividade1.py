@@ -1,4 +1,6 @@
 from math import sqrt
+import re
+import ramdom
 
 print(sqrt)(9)
 "Atividade 6"
@@ -693,3 +695,87 @@ while numero <= 30:
     print(numero)
     numero += 2
 
+"-----Atividade 45------"
+
+numero = int(input("por favor, digite um numero:"))
+
+while numero == 0:
+   print("Voce está pronto?")
+   print("Agora!!")
+   print(numero)
+
+"-----Atividade 46------"
+
+numero = int(input("Por favor,Digite um numero"))
+
+if numero % 2 == 0 and numero > 0:
+      print(numero)
+     
+"-----Atividade 47------"
+while True:
+
+  numero = int(input("Por favor,Digite um Limite superior"))
+
+  if numero == 8:
+   print(" 1 ")
+   print(" 2 ")
+   print(" 4 ")
+   print(" 8 ")
+
+   break
+   
+"-----Atividade 48------"
+
+
+while True:
+
+  numero = int(input("Por favor,Digite um Limite superior"))
+
+  if numero == 8:
+   print(" 1 ")
+   print(" 2 ")
+   print(" 4 ")
+   print(" 8 ")
+
+   break
+
+"-----Bibliotecas------"
+
+print(re.searsh("[A-Z])", "Senha"))
+print(re.searsh("[a-z])", "Senha"))
+print(re.searsh("[0-9])", "Senha"))
+
+"-----Bibliotecas 2 ------"
+
+numero_secreto = random.randint(1,100)
+
+print(numero_secreto)
+
+"-----Atividade 50------"
+
+soma = 0
+
+while soma <= 100:
+    numero = int(input("Por favor, digite um número: "))
+    soma += numero
+
+print(f"A soma total é {soma}.")
+
+"-----Atividade 51------"
+
+import re
+
+while condicao:
+    senha = input("Digite uma senha que tenha pelo menos 8 caracteres, uma letra maiúscula, uma letra minúscula e um número: ")
+
+    if (len(senha) >= 8 and 
+        re.search("[A-Z]", senha) and 
+        re.search("[a-z]", senha) and 
+        re.search("[0-9]", senha)):
+        
+        print("Senha válida!")
+        break
+    else:
+        print("A senha não atende aos requisitos. Tente novamente.")
+
+print("Senha aceita:", senha)
