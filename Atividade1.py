@@ -846,3 +846,77 @@ while condicao:
 
 print("Obrigado por usar o programa!")
 
+"---Rescrita 1---"
+
+palavra = "Banana"
+print(palavra*3)
+
+"---Rescrita 2---"
+
+string_entrada = input("Por favor, digite uma stering: ") # solicita ao usuario para digitar um string
+print(string_entrada) # Imprime a string digitada
+print("," * len(string_entrada)) # Inprime uma linha de traços com o mesmo comprimento da string digitada
+
+"------Pratica------"
+
+string1 = input("Por favor, digite a primeira string: ")
+string2 = input("Por favor, digite a segunda string: ")
+
+if len(string1) > len(string2):
+    print(f"A string mais longa é", string1)
+elif len(string2) > len(string1):
+    print(f"A string mais longa é:", string2)
+else:
+    print("As strings são igualmente longas.")
+
+"-----Atividade 55-----"
+
+
+string_entrada = input("Por favor, digite uma stering: ") # solicita ao usuario para digitar um string
+print(string_entrada) # Imprime a string digitada
+print("," * len(string_entrada)) # Inprime uma linha de traços com o mesmo comprimento da string digitada
+
+
+"-----Atividade 56-----"
+
+
+string1 = input("Por favor, digite a primeira string: ")
+
+
+while len(string1):
+   print(string1)
+   print("," * len(string1))
+   
+
+"-----Atividade 57-----"
+
+string_entrada = input("Por favor, digite uma string: ")
+
+
+while len(string_entrada) < 20:
+    num_asteriscos = 20 - len(string_entrada)
+    formatted_string = '*' * num_asteriscos + string_entrada
+else:
+    formatted_string = string_entrada
+
+print(formatted_string)
+print("," * len(string_entrada))
+
+"-----Atividade 58-----"
+
+
+string_entrada = input("Por favor, digite uma string: ")
+
+largura_quadro = 40
+largura_string = len(string_entrada)
+
+
+espacos_lado = (largura_quadro - largura_string) // 2
+espacos_direita = largura_quadro - largura_string - espacos_lado
+
+
+print('*' * largura_quadro)  
+print('*' + ' ' * (largura_quadro - 2) + '*')  
+print('*' + ' ' * espacos_lado + string_entrada + ' ' * espacos_direita + '*')  
+print('*' + ' ' * (largura_quadro - 2) + '*')  
+print('*' * largura_quadro)  
