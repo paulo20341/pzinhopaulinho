@@ -798,3 +798,51 @@ while condicao:
         print("Tente um número menor.")
 
 
+"-----Atividade 53------"
+
+import random
+
+saldo_disponivel = 1000  
+while True:
+    print("Bem vindo ao banco do BMG")
+    saque = int(input("Insira um valor de saque (múltiplo de 10): "))
+    
+    if saque % 10 != 0:
+        print("O valor inserido não é múltiplo de 10. Tente novamente.")
+        continue
+    
+    if saque > saldo_disponivel:
+        print("O valor inserido excede o saldo disponível. Tente novamente.")
+        continue
+    
+    
+    print(f"Saque de R$ {saque} realizado com sucesso!")
+    saldo_disponivel -= saque  
+    break
+
+
+"-----Atividade 54------"
+import random
+
+condicao = True
+
+while condicao:
+    print("Bem-vindo")
+
+    
+    palavra1 = input("Insira a primeira palavra: ")
+    palavra2 = input("Insira a segunda palavra: ")
+
+    
+    if len(palavra1) == len(palavra2):
+        print("Parabéns! As palavras têm a mesma quantidade de caracteres!")
+    else:
+        print("As palavras têm quantidades diferentes de caracteres.")
+
+    
+    continuar = input("Deseja verificar outras palavras? (s/n): ")
+    if continuar.lower() != 's':
+        condicao = False
+
+print("Obrigado por usar o programa!")
+
