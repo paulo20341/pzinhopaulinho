@@ -920,3 +920,68 @@ print('*' + ' ' * (largura_quadro - 2) + '*')
 print('*' + ' ' * espacos_lado + string_entrada + ' ' * espacos_direita + '*')  
 print('*' + ' ' * (largura_quadro - 2) + '*')  
 print('*' * largura_quadro)  
+
+"-----Colinha-----"
+
+while True:  #inicia i, loop infinito
+   numero = int(input("Por Favor, Digite um numero: "))
+   if numero == 1: #Verifica se o numero digitando
+      break #se for 1,Interrompe o loop
+
+while numero > 0: #continua o loop enquanto o numero for maior que 0
+   print(numero)
+   numero + 1
+
+
+"-----Colinha2-----"
+
+def mensagem():
+   print("Essa é a minha Função")
+mensagem()
+
+
+"-----Atividade1-----"
+
+def sete_irmaos():
+   print("paulo1")
+   print("paulo2")
+   print("paulo3")
+   print("paulo4")
+   print("paulo5")
+   print("paulo6")
+   print("paulo7")
+mensagem()
+
+"-----Atividade 2-----"
+
+def media():
+    
+    n1, n2, n3 = map(int, input("Por favor, digite 3 números inteiros separados por espaço: ").split())
+    
+    print(f"A média aritmética é: {(n1 + n2 + n3) / 3}")
+
+
+media()
+
+
+
+"-----Atividade 3-----"
+
+def quadado_hashtag(tamanho):
+    
+    for i in range(tamanho):
+        
+        print("#" * tamanho)
+
+
+tamanho = int(input("Por favor, digite o tamanho do lado do quadrado: "))
+quadado_hashtag(tamanho)
+
+   
+
+
+
+
+
+
+   
