@@ -980,8 +980,70 @@ quadado_hashtag(tamanho)
    
 
 
+"-----Atividade 4-----"
+
+def mesaXadrez(n):
+    x = 0
+    while x < tamanho:
+        y = 0
+        while y < tamanho:
+           if(x + y) % 2 == 0:
+              print('1', end= '')
+           else:
+              print('0', end='')
+              y += 1
+
+mesaXadrez(9)
+
+# Solicitandodoo o tamanho do tabuleiro ao usuário
+
+"-----Atividade 5-----"
+
+def quadradoString():
+    s = input("Por favor, digite uma string: ")
+    n = int(input("Por favor, digite um número inteiro para o tamanho do quadrado: "))
+
+   
+    for i in range(n):
+        linha = ""
+        for j in range(n):
+            linha += s[(i + j) % len(s)]
+        print(linha)
 
 
+quadradoString()
+
+
+
+"-----Colinha 3-----"
+
+def cumprimentar(nome):
+   print("Olá", nome)
+
+def cumprimentar_varias_vezes(nome, vezes):
+   while vezes > 0:
+      cumprimentar(nome)
+      vezes = 1
+
+cumprimentar_varias_vezes("Emily", 3)
+   
+   
+   
+"-----Atividade 6-----" 
+
+def linha(comprimento, caractere):
+    
+    if caractere == "":
+        caractere = "*"
+    else:
+        caractere = caractere[0]  
+    
+    print(caractere * comprimento)
+
+
+linha(10, "%")  
+linha(9, "L")   
+linha(5, "")    
 
 
    
