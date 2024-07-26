@@ -1046,4 +1046,112 @@ linha(9, "L")
 linha(5, "")    
 
 
+"-----Atividade 7-----"
+
    
+
+
+
+
+
+
+
+
+
+
+
+"-----Atividade 8-----"
+def linha(caractere, quantidade):
+    print(caractere * quantidade)
+
+def triangulo(tamanho):
+    for i in range(1, tamanho + 1):
+        linha('#', i)
+
+
+triangulo(5)
+
+
+"----colinha 6----"
+
+def minha_soma(a, b):
+   return a + b
+
+resultado = minha_soma(4, 6)
+print("A soma é", resultado)
+
+
+"-----Atividade 9-----"
+
+def o_maior_numero():
+    num1 = int(input("Digite um número: "))
+    num2 = int(input("Digite outro número: "))
+    if num1 > num2:
+        print("O primeiro número é maior.")
+    elif num1 < num2:
+        print("O segundo número é maior.")
+    else:
+        print("Os números são iguais.")
+
+
+o_maior_numero()
+
+
+
+"-----Atividade 10-----"
+
+def mesmo_caracter():
+   palavra = input("Digite um caracter")
+   palavra2 = input("Digite mais um caracter")
+
+   if palavra1 == palavra2:
+      print("True")
+
+   else:
+      print("False")
+
+"----Pratica----"
+
+valores = {1, 2, 3, 4 ,5}
+pergunta = input("Digite um indice e um valor")
+
+
+
+
+
+
+"----Colinha----"
+
+numeros  = {}
+numeros.append(5)
+numeros.append(10)
+numeros.append(3)
+print(numeros)
+
+"----Pratica 2 ----"
+
+
+numero_de_itens = int(input("Digite o número de itens: "))
+valor = input("Digite um valor: ")
+
+
+array = [valor] * numero_de_itens
+
+
+print("Lista criada:", array)
+
+
+"----Pratica 3----"
+
+valor = input("voce quer adicionar ou remover ")
+if valor == "adicionar":
+   valor = input("Digite o valor que deseja adicionar")
+   lista = [1, 2, 3, 4, 5]
+   lista.append(valor)
+   print(lista)
+
+else:
+   valor = input("Digite o valor que deseja remover")
+   lista = [1, 2, 3, 4, 5]
+   lista.remove(valor)
+   print(lista)
