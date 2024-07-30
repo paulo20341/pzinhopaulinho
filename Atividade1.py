@@ -1263,24 +1263,85 @@ def mais_caracteres(s):
 
 print(mais_caracteres("abracadabra"))  
 print(mais_caracteres("aabbcc"))       
-print(mais_caracteres("hello world")) 
+print(mais_caracteres("opa minecraft")) 
 
 "-----Atividade 9----"
 
 def sem_vogal():
-    
     argumento = input("Digite um argumento: ")
-    
     vogais = "aeiou"
+    resultado = ""
+    index = 0
+    tamanho = len(argumento)
     
-    
-    resultado = "".join([char for char in argumento if char not in vogais])
-    
+    while index < tamanho:
+        if argumento[index] in vogais:
+            index += 1
+        elif argumento[index] not in vogais:
+            resultado += argumento[index]
+            index += 1
+        else:
+            index += 1
+
     return resultado
 
 
-print(sem_vogal())  
+print(sem_vogal())
 
+"----Rescrita matriz-----"
+
+minha_lista = [[5,2,3], [2,2,5,1]]
+print(minha_lista)
+print(minha_lista[1])
+print(minha_lista[1][0])
+
+
+pessoas = [["Bety", 10, 1,37], ["pedro",7, 1.25], ["Emily", 32, 1.64], ["Alan", 39, 1.78]]
+for pessoa in pessoas:
+   nome = pessoa[0]
+   idade = pessoa[1]
+   altura = pessoa[2]
+
+"----Rescrita matriz 2-----"
+
+minha_matriz = [[1,2,3], [3,2,1], [4,5,6]]
+
+print(minha_matriz[0][1])
+minha_matriz[1][0] = 10
+print(minha_matriz)
+
+
+"----Pratica-----"
+def conta_elementos(minha_matriz: list, elemento: int):
+   pessoas = [["Bety", 10, 1,37], ["pedro",7, 1.25], ["Emily", 32, 1.64], ["Alan", 39, 1.78]]
+   print(minha_matriz)
+
+
+
+"----Pratica sudoku-----"
+
+sudoku = [
+  [9, 0, 0, 0, 8, 0, 3, 0, 0],
+  [0, 0, 0, 2, 5, 0, 7, 0, 0],
+  [0, 2, 0, 3, 0, 0, 0, 0, 4],
+  [0, 9, 4, 0, 0, 0, 0, 0, 0],
+  [0, 0, 0, 7, 3, 0, 5, 6, 0],
+  [7, 0, 5, 0, 6, 0, 4, 0, 0],
+  [0, 0, 7, 8, 0, 3, 9, 0, 0],
+  [0, 0, 1, 0, 0, 0, 0, 0, 3],
+  [3, 0, 0, 0, 0, 0, 0, 0, 2]
+]
+
+for item in sudoku:
+   for itens in item:
+      if itens == 0:
+         print('-',end='')
+      else:
+         print(itens, end='')
+         print("")
    
+
+
+
 
 
