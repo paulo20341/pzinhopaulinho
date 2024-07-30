@@ -1155,3 +1155,132 @@ else:
    lista = [1, 2, 3, 4, 5]
    lista.remove(valor)
    print(lista)
+
+
+"----Colinha 5----"
+
+minha_lista = [2, 5, 1, 2, 4]
+minha_lista.sort()
+print(minha_lista)
+
+"----Colinha 6----"
+
+original = [2, 5, 1, 2, 4]
+ordenado = sorted(original)
+print(ordenado)
+print(original)
+
+"-----Atividade 5------"
+
+def cim_anagramas(palavra1, palavra2):
+    
+    palavra1 = palavra1.replace(" ", "").lower()
+    palavra2 = palavra2.replace(" ", "").lower()
+    
+    
+    return sorted(palavra1) == sorted(palavra2)
+
+print(cim_anagramas("amor", "roma"))  
+print(cim_anagramas("amor", "ramo"))  
+print(cim_anagramas("amor", "romão")) 
+
+"-----Atividade 6------"
+
+def Soma_positivos():
+   valor = int(input("Digite uma lista "))
+   return valor
+print(valor)
+
+"------Atvididade 7-----"
+
+def numeros_pares(numero):
+    return numero % 2 == 0
+
+
+print(numeros_pares(4)) 
+print(numeros_pares(7))  
+print(numeros_pares(0))  
+print(numeros_pares(-2)) 
+
+"------Atvididade 8------"
+
+def lista_soma(lista1, lista2):
+    
+    if len(lista1) != len(lista2):
+        raise ValueError("As listas devem ter o mesmo número de itens.")
+    
+    
+    soma_lista = [lista1[i] + lista2[i] for i in range(len(lista1))]
+    return soma_lista
+
+
+lista1 = [1, 2, 3]
+lista2 = [4, 5, 6]
+print(lista_soma(lista1, lista2))  
+
+lista1 = [7, -3, 0]
+lista2 = [3, 6, 2]
+print(lista_soma(lista1, lista2))  
+
+
+"----exemplos 1----"
+
+minha_string = "quantas madeiras um esquilo poderia empilhar se um esquilo pudesse empilhar madeira"
+print(minha_string.count("ma"))
+
+minha_lista = [1,2,3,1,4,5,1,6]
+print(minha_lista.count(1))
+
+"----exemplos 2----"
+
+minha_string = "01"
+minha_string = minha_string.replace("01", "Olá")
+print(minha_string)
+
+
+
+"----Patrica----"
+
+def mais_caracteres(s):
+    
+    contador = {}
+    
+    
+    for char in s:
+        contador[char] = contador.get(char, 0) + 1
+    
+   
+    max_ocorrencias = 0
+    caractere_mais_frequente = ''
+    
+    for char in s:
+        if contador[char] > max_ocorrencias:
+            max_ocorrencias = contador[char]
+            caractere_mais_frequente = char
+    
+    return caractere_mais_frequente
+
+
+print(mais_caracteres("abracadabra"))  
+print(mais_caracteres("aabbcc"))       
+print(mais_caracteres("hello world")) 
+
+"-----Atividade 9----"
+
+def sem_vogal():
+    
+    argumento = input("Digite um argumento: ")
+    
+    vogais = "aeiou"
+    
+    
+    resultado = "".join([char for char in argumento if char not in vogais])
+    
+    return resultado
+
+
+print(sem_vogal())  
+
+   
+
+
