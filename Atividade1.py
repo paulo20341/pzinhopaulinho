@@ -1385,3 +1385,155 @@ def jogue_o_jogo():
 
 
 jogue_o_jogo()
+
+"----Rescrita Dicionario----"
+
+meu_dicionario = {}
+meu_dicionario["alpina"] = "macaco"
+meu_dicionario["bananari"] = "banana"
+meu_dicionario["cembalo"] = "cravo"
+print(meu_dicionario)
+print(meu_dicionario)["apina"]
+palavra = input("por favor, digite uma plavra: ")
+if palavra in meu_dicionario:
+   print("Tradução: ", meu_dicionario[palavra])
+else:
+   print("palavra nao encotrada")
+
+"---Dicionario Maneira mas avançada de usar----"
+
+lista_palavras = [
+  "banana", "leite", "cerveja", "queijo", "leite azedo", "suco", "linguiça",
+  "tomate", "pepino", "manteiga", "margarina", "queijo", "linguiça",
+  "cerveja", "leite azedo", "leite azedo", "manteiga", "cerveja", "chocolate"
+]
+
+def contagens(minha_lista):
+   palavras = {}
+   for palavra  in minha_lista:
+      
+
+      if palavra not in palavras:
+         palavras[palavra] = 0
+
+         palavras[palavra] +=1
+         return palavras
+      
+      print(contagens(lista_palavras))
+
+"---- Pratica ----"
+
+def histogram(s):
+    contagem = {}
+    
+    
+    for char in s:
+        if char not in contagem:
+            contagem[char] = 0
+        contagem[char] += 1
+    
+    
+    for char in sorted(contagem):
+        print(f"{char} {'*' * contagem[char]}")
+
+
+histogram("abba")
+
+"---Atividade 11---"
+
+
+palavras = ["banana", "leite", "cerveja", "queijo"]
+
+while True:
+    comando = input("Escolha uma opção: 1 para busca, 2 para adicionar, 3 para sair: ")
+
+    if comando == "1":
+        palavra_busca = input("Digite a palavra que deseja buscar: ")
+        if palavra_busca in palavras:
+            print(f"A palavra '{palavra_busca}' foi encontrada na lista.")
+        else:
+            print(f"A palavra '{palavra_busca}' não foi encontrada na lista.")
+
+    elif comando == "2":
+        nova_palavra = input("Digite a palavra que deseja adicionar: ")
+        palavras.append(nova_palavra)
+        print(f"A palavra '{nova_palavra}' foi adicionada à lista.")
+
+    elif comando == "3":
+        confirmacao = input("Você tem certeza que quer sair do programa? (s/n): ")
+        if confirmacao.lower() == "s":
+            print("Saindo do programa.")
+            break
+    else:
+        print("Comando inválido. Por favor, escolha uma opção válida.")
+
+
+"---Atividade 12---"
+
+contatos = []
+
+while True:
+    comando = input("Escolha uma opção: 1 para busca, 2 para adicionar, 3 para sair: ")
+
+    if comando == "1":
+        palavra_busca = input("nome")
+        encontrado = False
+        for nome, numero in contatos:
+            if palavra_busca.lower() in nome.lower() or palavra_busca == numero:
+                print(f"Contato encontrado: Nome: {nome}, Número: {numero}")
+                encontrado = True
+        if not encontrado:
+            print(f"Contato '{palavra_busca}' não foi encontrado.")
+
+    elif comando == "2":
+        nome = input("Digite o nome que deseja adicionar: ")
+        numero = input("Digite o número que deseja adicionar: ")
+        contatos.append((nome, numero))
+        print(f"Contato '{nome}' com número '{numero}' foi adicionado à lista.")
+
+    elif comando == "3":
+        confirmacao = input("Você tem certeza que quer sair do programa? (s/n): ")
+        if confirmacao.lower() == "s":
+            print("Saindo do programa.")
+            break
+    else:
+        print("Comando inválido. Por favor, escolha uma opção válida.")
+
+#----Deletando chaves----#
+
+staff = {"Alan": "lecturer", "Emily": "professor", "David": "lecturer"}
+del staff["David"]
+print(staff)
+
+staff = {"Alan": "lecturer", "Emily": "professor", "David": "lecturer"}
+deleted = staff.pop("David")
+print(staff)
+print(deleted, "deleted")
+
+
+#---Atividade 13 [Adicionando valores e chaves e invertendo]---#
+
+dicionario = {}
+
+def invert(dicionario: dict):
+  comando = input("Adiciona uma chave")
+  comando2 = input("Adicione um valor")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
