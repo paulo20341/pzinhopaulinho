@@ -57,7 +57,7 @@ def main():
         except ValueError:
             print("Entrada inválida! Digite números inteiros.")
 
-    print("Parabéns! Você resolveu o Sudoku!")
+    print("Parabéns! Você vc resollveu o joginho sodokú")
 
 if __name__ == "__main__":
     main()
