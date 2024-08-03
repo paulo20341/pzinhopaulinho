@@ -53,11 +53,11 @@ def main():
             if validar_entrada(x, y, num, tabuleiro):
                 atualizar_tabuleiro(x, y, num, tabuleiro)
             else:
-                print("Entrada inválida! Tente novamente.")
+                print("Entrada inválida Tente novamente.")
         except ValueError:
-            print("Entrada inválida! Digite números inteiros.")
+            print("Entrada inválida, por favor Digite números inteiros.")
 
-    print("Parabéns! Você vc resollveu o joginho sodokú")
+    print("Parabéns! vc resollveu o joginho sodokú")
 
 if __name__ == "__main__":
     main()
